@@ -1,15 +1,97 @@
 <html>
   <head>
+    <meta charset="UTF-8">
+
     <title>Calculadora Ganancias 2019</title>
+
+    <script
+			  src="https://code.jquery.com/jquery-1.12.4.min.js"
+			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        
+
+    <script src="js/calculadora-ganancias-2019.js"></script>
   </head>
   <body>
 
     <h1> 2019</h1>
+    <div>
+    <h2>Info</h2>
 
     <form>
+      <div>
+        <label for="sueldoBruto">Sueldo bruto</label>
+        <input id="sueldoBruto" type="text" name="sueldoBruto" />
+      </div>
+      <div>
+        <label for="conyuge">Cónyuge a cargo</label>
+        <input id="No" type="radio" name="conyuge" value="0" checked="false">
+        No
+        <input id="Si" type="radio" name="conyuge" value="1" checked="false">
+        Sí
+      </div>
+      <div>
+        <label for="jubilado">Jubilado</label>
+        <input id="No" type="radio" name="jubilado" value="0" checked="false">
+        No
+        <input id="Si" type="radio" name="jubilado" value="1" checked="false">
+        Sí
+      </div>
+      <div>
+        <label for="patagonico">Patagónico</label>
+        <input id="No" type="radio" name="patagonico" value="0" checked="false">
+        No
+        <input id="Si" type="radio" name="patagonico" value="1" checked="false">
+        Sí
+      </div>
+      <div>
+        <label for="hijos">Cantidad de hijos (menores de 18 años)</label>
+        <select id="hijos" name="hijos">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+        </select>
+      </div>
+      <div>
+        <label for="alquiler">Alquiler</label>
+        <input id="alquiler" type="text" name="alquiler" />
+      </div>
+      <div>
+        <label for="hipotecario">Hipotecario</label>
+        <input id="hipotecario" type="text" name="hipotecario" />
+      </div>
+      <button id="calcular" type="button">Calcular</button>
     
-      <input id="sueldoBruto" type="text" />
-    </form>
+    </form></div>
+    <div>
+      <h2>Vas a pagar...</h2>
+      <div>
+        <label>Impuesto anual</label>
+        <p id="impuestoAnual"></p>        
+      </div>
+      <div>
+        <label>Impuesto mensual</label>
+        <p id="impuestoMensual"></p>        
+      </div>
+      <div>
+        <label>Alícuota</label>
+        <p id="alicuota"></p>        
+      </div>
+      <div>
+        <label>Alícuota marginal</label>
+        <p id="alicuotaMarginal"></p>        
+      </div>
+      <div>
+        <label>Sueldo</label>
+        <p id="sueldoEnMano"></p>        
+      </div>
+    </div>
 
   </body>
 
